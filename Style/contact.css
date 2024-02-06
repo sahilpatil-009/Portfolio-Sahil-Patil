@@ -1,0 +1,150 @@
+.body-cnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.Cntr{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(255, 204, 36); */
+}
+.item{
+    width: 100%;
+    height: 70%;
+    max-width: 80%;
+    background: #fff;
+    border-radius: 20px;
+
+    box-shadow:  0 0 20px 10px rgba(255, 204, 36, 0.4);
+    /* box-shadow:  0 0 20px 10px rgba(0, 0, 0, 0.8); */
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+
+}
+
+.contact{
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.submit-from {
+    background: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.first-text{
+    /* color: #fff; */
+    /* border: 1px solid #fff; */
+    padding-left: 20px;
+    padding-top: 4px;
+    font-size: 35px;
+    font-weight: 600;
+    color: rgb(255, 204, 36);
+}
+
+.image{
+   height: 320px;
+    width: 320px;
+}
+
+.social-links{
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.second-text{
+
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+.social-links .icons{
+    text-align: center;
+    width: 100%;
+    /* margin-left: 40px; */
+    padding-bottom: 50px;
+    transition: all 1s ease;
+}
+
+/* Form */
+.third-text{
+    font-size: 40px;
+    /* padding-top: 30px; */
+    padding-top: 2px;
+    color: #fff;
+    /* font-weight: 700; */
+    /* border: 1px solid #fff; */
+    text-align: center;
+}
+
+.submit-from form{
+    text-align: center;
+    height: 89%;
+    width: 100%;
+    overflow: hidden;
+    /* border: 1px solid #fff; */
+    align-items: center;
+    
+}
+
+form .input-box input,textarea{
+    width: 80%;
+    margin-top: 30px;
+    padding: 10px;
+    background: transparent;
+    outline: none;
+    border: 2px solid rgb(255, 204, 36);
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+    padding-left: 20px;
+    transition: all .5s ease;
+}
+
+.submit-from button{
+    margin-top: 20px;
+    padding: 10px 10px 10px 10px;
+    width: 50%;
+    font-size: 22px;
+    cursor: pointer;
+    background: rgb(255, 204, 36);
+    border: none;
+    transition: all .5s ease;
+    border-radius: 15px;
+    font-weight: 700;
+}
+
+form .input-box input:hover,
+form .input-box textarea:hover{
+
+    box-shadow:  0 0 20px 10px rgba(0, 0, 0, 0.4);
+}
+
+.submit-from button:hover{
+    background-color: #111;
+    color: #fff;
+    /* border: 1px solid #fff; */
+    box-shadow:  0 0 20px 10px rgba(255, 204, 36, 0.4);
+}

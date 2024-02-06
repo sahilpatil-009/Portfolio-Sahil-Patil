@@ -1,0 +1,13 @@
+footer{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+footer div{
+    color: #888;
+    font-size: 22px;
+    margin-top: 20px;
+    /* Not selet ny user */
+    user-select: none;
+}

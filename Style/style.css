@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #111;
+}
+
+/* Nav Bar */
+/* Container Stye */
+.container{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    padding: 10px 10px;
+    justify-content: space-around;
+    font-size: 30px;
+    background: #222;
+    z-index: 3;
+    position: sticky;
+    /* position: fixed; */
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgb(255, 204, 36);
+}
+
+/* Logo Styling */
+.logo{
+color: #fff;
+text-decoration: none;
+font-weight: 600;
+text-shadow: 0px 0px 20px rgb(255, 204, 36);
+opacity: 0;
+animation: slideRight 1s ease forwards;
+}
+
+.logo span{
+    color: rgb(255, 204, 36);
+}
+
+/* Logo Animation */
+@keyframes slideRight{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+/* NavBar Style */
+.nav a {
+display: inline-block;    
+color: #fff;
+margin-left: 50px;
+text-decoration: none;
+padding: 5px 5px;
+font-size: 20px;
+font-weight: 800;
+transition: all .3s ease;
+opacity: 0;
+animation: slideTop .5s ease forwards;
+}
+/* NavBar Animation */
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+#ResumeDwnload{
+    cursor: pointer;
+}
+.nav a:hover{
+background-color: rgb(255, 204, 36);
+color: black;
+border-radius: 5px;
+font-size: 20px;
+font-weight: 600;
+}
+
+.parent .area{
+    position: relative;
+}
+
+#bar{
+    color: rgb(255, 204, 36);
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+.home{
+    width: 100%;
+    height: 100vh;
+    background: transparent;
+
+    position: absolute;  /*This Done Page OVer page*/
+    z-index: 2; /*This Done Page OVer page */
+
+    display: flex;
+    /* align-items: center;*/
+    justify-content:space-evenly;
+    color: #fff;
+    /* padding-top: 100px; */
+    /* margin-top: 50px; */
+}
+
+.photo{
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    /* margin-top: 100px; */
+    /* border: 2px solid #fff; */
+    /* box-shadow: 0px 0px 20px 20px rgba(255, 255, 255, 0.5); */
+    padding-top: none;
+}
+
+.photo img{
+    width: 700px;
+    height: 700px; 
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: all .5s ease;
+    /* animation:slideBottom 1s ease forwards;  */
+    animation:slideTop.5s ease forwards; 
+    animation-delay: 1s;
+}
+
+.Info {
+    align-items: center;
+    /* line-height: 35px; */
+    word-spacing: 5px;
+    padding-top: 200px;
+    margin-left: 40px;
+    word-wrap:break-word;
+}
+.Info p{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.Info h1{
+    margin-left: 20px;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: slideRight 1s ease forwards; 
+    /* text-shadow: 0px 0px 20px rgb(255, 204, 36); */
+}
+.Info h2{
+    margin-left: 20px;
+    font-size: 25px;
+    margin-bottom: 30px;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .2s;
+    font-weight: 300;
+}
+
+.Info h3{
+    margin-left: 20px;
+    margin-bottom: 30px;
+    opacity: 0;
+     animation: slideRight 1s ease forwards; 
+     animation: slideBottom 1s ease forwards;
+    animation-delay: .7s; 
+}
+
+.Info .text{
+    color: rgb(255, 204, 36);
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 0px 0px 20px rgb(255, 204, 36);
+}
+
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.icons{
+    margin-top: 40px;
+    width: 50%;
+    text-align: center;
+    height: 60px;
+    font-size: 25px;
+    font-weight: 300;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    line-height: 2px;
+    transition: all .5s ease;
+    opacity: 0;
+    /* opacity: 0;
+    animation: slideRight 1s ease forwards; */
+    animation: slideLeft 1.5s ease forwards;
+    animation-delay: 1s;
+}
+
+.icons i{
+    padding: 12px 12px 12px 12px;
+    /* border: 2px solid #fff; */
+    background: #555;
+    border-radius: 50%;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.icons :nth-child(1):hover{
+    background:#0A66C2;
+    border: 1px solid #111;
+}
+.icons :nth-child(2):hover{
+    background:#ff362f;
+    border: 1px solid #111;
+}
+.icons :nth-child(3):hover{
+    background:#333;
+    color: #fff;
+    border: 1px solid #fff;
+}
+.icons :nth-child(4):hover{
+    background:#1DA1F2;
+    color: #fff;
+    border: 1px solid #111;
+}
+.icons :nth-child(5):hover{
+    background: #E1306C;
+    color: #fff;
+    border: 1px solid #111;
+}
+
+.more{
+    margin-top:20px;
+    width: 50%;
+    /* border: 2px solid #fff; */
+    height: 60px;
+    text-align: center;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1.8s;
+}
+
+.more button{
+    margin-right: 70px;
+    height: 60px;
+    width: 170px;
+    font-size: 18px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    /* background: rgb(255, 204, 36); */
+    background: #555;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+
+.more button:hover{
+    color: #111;
+    background: rgb(255, 204, 36);
+}
+
+/* Bar Navigation Classses */
+#CheckdBox{
+    display: none;
+}
+.Bar-logo{
+    padding-top: 50px;
+}
+.Bar-container{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+} 
+
+.Bar-nav {
+        /* height: 250px; */
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column; 
+}
+    
+
