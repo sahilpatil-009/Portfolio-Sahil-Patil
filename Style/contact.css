@@ -111,15 +111,14 @@
 
 form .input-box input,textarea{
     width: 80%;
-/*     margin-top: 30px; */
-    gap:20px;
-    padding: 10px;
+    margin-bottom: 13px;
+    padding: 12px;
     background: transparent;
     outline: none;
     border: 2px solid rgb(255, 204, 36);
     border-radius: 15px;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     padding-left: 20px;
     transition: all .5s ease;
 }
