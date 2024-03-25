@@ -45,7 +45,7 @@
     flex-direction: column;
     justify-content:center;
     align-items: center;
-    padding-top: 30px;
+    padding-top: 135px;
 }
 
 .first-text{
@@ -111,7 +111,8 @@
 
 form .input-box input,textarea{
     width: 80%;
-    margin-top: 30px;
+/*     margin-top: 30px; */
+    gap:20px;
     padding: 10px;
     background: transparent;
     outline: none;
