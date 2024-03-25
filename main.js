@@ -11,7 +11,7 @@ var typed = new Typed(".text", {
 //When click On Logo Window Refresh
 let logo = document.querySelector(".logo");
 logo.addEventListener("click", ()=>{ 
-    window.location.reload()
+    window.location.reload();
 });
 
 //icons Redurect to My Social Media Handel
@@ -117,7 +117,7 @@ resumeclick.addEventListener("click", ()=> {
     console.log("Resume Button Clicked")
     // Replace 'path/to/your/file.pdf' with the actual path to your PDF file
     // const pdfUrl = 'https://drive.google.com/uc?export=download&id=1fNiQCAZzyO-lSv-rEwuvd_E8hnDd-5BS';
-    const pdfUrl = 'https://drive.google.com/uc?export=download&id=1wudt1YLRsVLvOKKE8fZU9nEQLalhKSNe';
+    const pdfUrl = 'https://drive.google.com/uc?export=download&id=1HVPCrEQVn-9OpsP4LeqjiYGyqFdw17dO';
     // const pdfUrl = 'https://drive.google.com/file/d/1wudt1YLRsVLvOKKE8fZU9nEQLalhKSNe/view?usp=sharing';
 
     // Create a link element
