@@ -117,7 +117,7 @@ resumeclick.addEventListener("click", ()=> {
     console.log("Resume Button Clicked")
     // Replace 'path/to/your/file.pdf' with the actual path to your PDF file
     // const pdfUrl = 'https://drive.google.com/uc?export=download&id=1fNiQCAZzyO-lSv-rEwuvd_E8hnDd-5BS';
-    const pdfUrl = 'https://drive.google.com/uc?export=download&id=1HVPCrEQVn-9OpsP4LeqjiYGyqFdw17dO';
+    const pdfUrl = 'https://drive.google.com/uc?export=download&id=1ZtIoOcD8A6jYGYtp_ZZxhR75al8dVwMN';
     // const pdfUrl = 'https://drive.google.com/file/d/1wudt1YLRsVLvOKKE8fZU9nEQLalhKSNe/view?usp=sharing';
 
     // Create a link element
