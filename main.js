@@ -1,7 +1,7 @@
 
 //Typing Effect
 var typed = new Typed(".text", {
-    strings: ["Java Developer", "Frontend Developer", "Backend Developer" ,"Full-Stack Developer", ],
+    strings: ["Java Developer", "Full-Stack Developer", " AWS & DevOps" ],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
